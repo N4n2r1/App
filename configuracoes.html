@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Configurações</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+  <script defer src="configuracoes.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="back" href="index.html" aria-label="Voltar">←</a>
+    <h1>Configurações</h1>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Tema visual</h2>
+      <div class="tema-options">
+        <button class="btn" data-tema="escuro">Escuro (padrão)</button>
+        <button class="btn" data-tema="claro">Claro</button>
+        <button class="btn" data-tema="aero">Aero</button>
+      </div>
+
+      <h2>Idioma</h2>
+      <select id="idiomaSelect" aria-label="Selecionar idioma">
+        <option value="pt">Português</option>
+        <option value="en">English</option>
+      </select>
+
+      <h2>Notificações</h2>
+      <button class="btn" id="ativarNotificacoes">Ativar lembretes</button>
+    </section>
+  </main>
+</body>
+</html>
