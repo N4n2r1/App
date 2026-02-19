@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Meu Estilo de Estudos</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+  <script defer src="index.js"></script>
+</head>
+<body>
+  <header class="topbar" role="banner">
+    <div class="brand">
+      <h1>Meu Estilo de Estudos</h1>
+    </div>
+    <nav aria-label="Principal">
+      <a href="index.html" class="nav-link active">Início</a>
+      <a href="dicas.html" class="nav-link">Dicas</a>
+      <a href="calendario.html" class="nav-link">Calendário</a>
+      <a href="tarefas.html" class="nav-link">Tarefas</a>
+      <a href="configuracoes.html" class="nav-link">Configurações</a>
+    </nav>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <section class="card plano-dia" aria-labelledby="plano-title">
+      <h2 id="plano-title">Plano de Estudos do Dia</h2>
+      <div class="plano-grid">
+        <div>
+          <p class="muted">Horário sugerido</p>
+          <p class="large" id="horario">18:00 – 20:00</p>
+        </div>
+        <div>
+          <p class="muted">Matéria do dia</p>
+          <p class="large" id="materia">Matemática</p>
+        </div>
+        <div>
+          <p class="muted">Método recomendado</p>
+          <p class="large" id="metodo">Pomodoro</p>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="btn primary" id="gerarPlanoBtn">Gerar plano personalizado</button>
+        <button class="btn" onclick="location.href='tarefas.html'">Abrir Lista de Tarefas</button>
+        <button class="btn" onclick="location.href='calendario.html'">Abrir Calendário</button>
+      </div>
+
+      <div id="planoResultado" class="resultado" aria-live="polite"></div>
+    </section>
+
+    <section class="card resumo">
+      <h3>Resumo rápido</h3>
+      <ul>
+        <li id="resumo-tarefas">Tarefas pendentes: <strong>0</strong></li>
+        <li id="resumo-desempenho">Última sessão: <strong>—</strong></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <small>© 2026 Meu Estilo de Estudos — Multilíngue • Acessível • Seguro</small>
+  </footer>
+</body>
+</html>

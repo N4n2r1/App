@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+  <script defer src="tarefas.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="back" href="index.html" aria-label="Voltar">←</a>
+    <h1>Lista de Tarefas</h1>
+  </header>
+
+  <main class="container">
+    <section class="card tarefas-area">
+      <form id="formTarefa" aria-label="Adicionar tarefa">
+        <label>
+          Descrição
+          <input id="tDescricao" required maxlength="255" />
+        </label>
+        <label>
+          Matéria
+          <input id="tMateria" placeholder="Matemática" />
+        </label>
+        <label>
+          Data
+          <input id="tData" type="date" required />
+        </label>
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Adicionar</button>
+          <button class="btn" type="button" id="limparBtn">Limpar</button>
+        </div>
+      </form>
+
+      <ul id="listaTarefas" class="lista" aria-live="polite"></ul>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Calendário</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+  <script defer src="calendario.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="back" href="index.html" aria-label="Voltar">←</a>
+    <h1>Calendário</h1>
+  </header>
+
+  <main class="container">
+    <section class="card calendario" aria-label="Calendário de estudos">
+      <div id="calendarControls" class="calendar-controls">
+        <button id="prevMonth" class="btn">◀</button>
+        <h3 id="monthLabel">Fevereiro 2026</h3>
+        <button id="nextMonth" class="btn">▶</button>
+      </div>
+
+      <div id="calendarGrid" class="calendar-grid" role="grid" aria-label="Dias do mês"></div>
+
+      <div id="diaDetalhe" class="card detalhe" aria-live="polite"></div>
+    </section>
+  </main>
+</body>
+</html>

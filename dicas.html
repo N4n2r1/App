@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dicas de Estudos</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+  <script defer src="dicas.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="back" href="index.html" aria-label="Voltar">←</a>
+    <h1>Dicas de Estudos</h1>
+    <nav aria-hidden="true"></nav>
+  </header>
+
+  <main class="container">
+    <section class="card dicas-list" aria-live="polite">
+      <h2>Matemática</h2>
+      <div class="dica" data-materia="Matemática">Use mapas mentais para fórmulas; pratique com exercícios cronometrados.</div>
+
+      <h2>Ciências</h2>
+      <div class="dica" data-materia="Ciências">Faça resumos visuais e experimente simulações interativas.</div>
+
+      <h2>História</h2>
+      <div class="dica" data-materia="História">Crie linhas do tempo e conte histórias para fixar eventos.</div>
+    </section>
+
+    <aside class="card">
+      <h3>Filtrar por matéria</h3>
+      <select id="filtroMateria" aria-label="Filtrar dicas por matéria">
+        <option value="">Todas</option>
+        <option>Matemática</option>
+        <option>Ciências</option>
+        <option>História</option>
+      </select>
+    </aside>
+  </main>
+</body>
+</html>
